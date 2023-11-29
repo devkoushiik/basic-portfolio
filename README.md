@@ -1,2 +1,2 @@
 # Visit my portfolio
-htttp://wwww.devkoushiik.netlify.app
+http://www.devkoushiik.netlify.app
