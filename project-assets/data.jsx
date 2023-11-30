@@ -39,6 +39,7 @@ export const skills = [
     icon: <SiTypescript className="h-16 w-16 text-blue-500" />,
     text: "I excel in TypeScript, showcasing proficiency in building scalable and maintainable applications with strong typing and object-oriented principles. My expertise in TypeScript extends to implementing interfaces, leveraging advanced features like decorators, and ensuring type safety for robust codebases.",
   },
+
   // {
   //   id: nanoid(),
   //   title: "Node JS",
@@ -83,5 +84,13 @@ export const projects = [
     github: "https://github.com/devkoushiik/Pizza_shop",
     title: "Pizza Shop",
     text: "This is a pizza delivery website.",
+  },
+  {
+    id: nanoid(),
+    img: "https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    url: "https://rtkxkoushik.netlify.app/",
+    github: "https://github.com/devkoushiik/RTK_cart",
+    title: "Cart System With RTK and AsyncThunk",
+    text: "This is a RTK practice project.A mini cart system.",
   },
 ];
