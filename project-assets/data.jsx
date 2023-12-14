@@ -105,7 +105,7 @@ export const projects = [
     img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     url: "https://horizonxkoushik.netlify.app/",
     github: "https://github.com/devkoushiik/Horizon_Ecommerce",
-    title: "Online Shop App",
+    title: "Online Shopping App",
     text: "This is a API based online shopping app using React JS, and RTK.",
   },
 ];
