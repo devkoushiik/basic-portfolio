@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
 import { FaGitSquare, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
 import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
@@ -38,6 +39,12 @@ export const skills = [
     title: "TypeScript",
     icon: <SiTypescript className="h-16 w-16 text-blue-500" />,
     text: "I excel in TypeScript, showcasing proficiency in building scalable and maintainable applications with strong typing and object-oriented principles. My expertise in TypeScript extends to implementing interfaces, leveraging advanced features like decorators, and ensuring type safety for robust codebases.",
+  },
+  {
+    id: nanoid(),
+    title: "MySQL",
+    icon: <GrMysql className="h-16 w-16 text-blue-500" />,
+    text: "Dedicated and proficient SQL professional with a comprehensive understanding of database management and optimization. Proven expertise in designing and implementing complex SQL queries, stored procedures, and triggers. Adept at ensuring data integrity and performance efficiency to drive seamless and reliable data-driven solutions.",
   },
 
   // {
