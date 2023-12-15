@@ -4,8 +4,9 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <Wrapper>
-      <section className="bg-white py-10" id="about">
-        <div className="mx-auto max-w-7xl px-8 items-center gap-16 grid md:grid-cols-2">
+      <section className="bg-white py-10 mx-auto max-w-7xl " id="about">
+        <SectionTitle text={"About Me"} />
+        <div className="px-8 mt-4 mx-auto max-w-7xl  items-center gap-16 grid md:grid-cols-2">
           <div className="container">
             <div className="box w-[18rem] h-[18rem] md:w-[26rem] md:h-[26rem]">
               <div className="imgBox">
@@ -24,7 +25,9 @@ const About = () => {
             </div>
           </div>
           <article>
-            <SectionTitle text={"about me"} />
+            <h2 className="text-2xl text-blue-400 capitalize hover:text-blue-500">
+              Some information
+            </h2>
             <p className="text-slate-600 mt-8 leading-loose text-lg">
               Hi, I am Koushik Ahmed.I am currently completing my undergraduate
               program in Bangladesh University Of Business and Technology.
