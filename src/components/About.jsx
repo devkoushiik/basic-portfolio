@@ -7,9 +7,13 @@ const About = () => {
       <section className="bg-white py-10" id="about">
         <div className="mx-auto max-w-7xl px-8 items-center gap-16 grid md:grid-cols-2">
           <div className="container">
-            <div className="box">
+            <div className="box w-[18rem] h-[18rem] md:w-[26rem] md:h-[26rem]">
               <div className="imgBox">
-                <img src={img} alt="img" />
+                <img
+                  className="w-[18rem] h-[18rem] md:w-[26rem] md:h-[26rem]"
+                  src={img}
+                  alt="img"
+                />
               </div>
               <div className="content">
                 <h2>
@@ -40,18 +44,13 @@ const Wrapper = styled.div`
   .container {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .container .box {
     position: relative;
-    width: 26rem;
-    height: 26rem;
-    margin: 4rem;
+    /* width: 26rem;
+    height: 26rem; */
   }
 
   .container .box:hover .imgBox {
@@ -73,8 +72,8 @@ const Wrapper = styled.div`
   }
 
   .imgBox img {
-    width: 26rem;
-    height: 26rem;
+    /* width: 26rem;
+    height: 26rem; */
     object-fit: cover;
     resize: both;
   }
@@ -97,7 +96,7 @@ const Wrapper = styled.div`
 
   .content h2 {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #111;
     font-weight: 500;
     line-height: 2rem;
