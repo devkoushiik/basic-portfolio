@@ -32,19 +32,19 @@ export const skills = [
     id: nanoid(),
     title: "Git",
     icon: <FaGitSquare className="h-16 w-16 text-blue-500" />,
-    text: "I excel in working with Git, demonstrating proficiency in version control, branching, merging, and conflict resolution. My expertise ensures a seamless and collaborative approach to managing code repositories.",
+    text: "I excel in working with Git, demonstrating proficiency in version control, branching, merging, and conflict resolution.",
   },
   {
     id: nanoid(),
     title: "TypeScript",
     icon: <SiTypescript className="h-16 w-16 text-blue-500" />,
-    text: "I excel in TypeScript, showcasing proficiency in building scalable and maintainable applications with strong typing and object-oriented principles. My expertise in TypeScript extends to implementing interfaces, leveraging advanced features like decorators, and ensuring type safety for robust codebases.",
+    text: "I excel in TypeScript, showcasing proficiency in building scalable and maintainable applications with strong typing and object-oriented principles.",
   },
   {
     id: nanoid(),
     title: "MySQL",
     icon: <GrMysql className="h-16 w-16 text-blue-500" />,
-    text: "Dedicated and proficient SQL professional with a comprehensive understanding of database management and optimization. Proven expertise in designing and implementing complex SQL queries, stored procedures, and triggers. Adept at ensuring data integrity and performance efficiency to drive seamless and reliable data-driven solutions.",
+    text: "Dedicated and proficient SQL professional with a comprehensive understanding of database management and optimization.",
   },
 
   // {

@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 const Projects = () => {
   return (
     <section className="mx-auto max-w-7xl px-8 py-20" id="projects">
-      <SectionTitle text={"web creation"} />
+      <SectionTitle text={"Web Creations"} />
 
       <div className="py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {projects.map((project) => {
