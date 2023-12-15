@@ -43,12 +43,14 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .container .box {
     position: relative;
-    width: 30rem;
-    height: 30rem;
+    width: 26rem;
+    height: 26rem;
     margin: 4rem;
   }
 
@@ -71,8 +73,8 @@ const Wrapper = styled.div`
   }
 
   .imgBox img {
-    width: 30rem;
-    height: 30rem;
+    width: 26rem;
+    height: 26rem;
     object-fit: cover;
     resize: both;
   }

@@ -1,15 +1,36 @@
-import styled from "styled-components";
+import { motion } from "framer-motion";
+const cardVariants = {
+  offscreen: {
+    y: 200,
+  },
+  onscreen: {
+    y: 1,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 const SkillsCard = ({ icon, title, text }) => {
   return (
-    <div className="card w-96 grid shadow-xl">
+    <motion.div
+      className="card  w-96 grid shadow-md"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
       <figure className="mt-8">
-        <span className="text-blue-500">{icon}</span>
+        <motion.span variants={cardVariants} className="text-blue-500">
+          {icon}
+        </motion.span>
       </figure>
       <div className="card-body">
         <h2 className="card-title text-blue-500">{title}</h2>
         <p className="text-slate-500">{text}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default SkillsCard;

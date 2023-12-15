@@ -1,14 +1,35 @@
 import styled from "styled-components";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import img from "../../project-assets/img.jpg";
+import { motion } from "framer-motion";
+const cardVariants = {
+  offscreen: {
+    y: 100,
+  },
+  onscreen: {
+    y: 1,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 const Hero = () => {
   return (
     <Wrapper>
       <div>
-        <div className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          className="mx-auto max-w-7xl px-8 grid md:grid-cols-2 items-center gap-8"
+        >
           <article>
-            <h1 className="text-7xl font-bold tracking-wider">
-              I&apos;m <span className="text-blue-600">Koushik</span>
+            <h1 className="text-7xl font-bold tracking-wider mt-4 md:mt-0">
+              I&apos;m{" "}
+              <motion.span className="text-blue-600">Koushik</motion.span>
             </h1>
             <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
               Front-End-Developer
@@ -17,12 +38,18 @@ const Hero = () => {
               turning ideas into interactive reality.
             </p>
             <div className="flex gap-x-4 mt-4">
-              <a href="https://github.com/devkoushiik">
+              <motion.a
+                variants={cardVariants}
+                href="https://github.com/devkoushiik"
+              >
                 <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
-              </a>
-              <a href="https://www.linkedin.com/in/devkoushiik/">
+              </motion.a>
+              <motion.a
+                variants={cardVariants}
+                href="https://www.linkedin.com/in/devkoushiik/"
+              >
                 <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
-              </a>
+              </motion.a>
               {/* <a href="">
               <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a> */}
@@ -31,7 +58,7 @@ const Hero = () => {
 
           <div className="container">
             <div className="card">
-              <div className="img-container">
+              <div className="img-container items-end place-content-end place-items-end">
                 <img className="rounded-2xl" src={img} alt="" />
               </div>
               <div className="card-details">
@@ -48,7 +75,7 @@ const Hero = () => {
           {/* <article className="hidden md:block">
           <img src={img} alt="img" className="h-80 lg:h-96 rounded-3xl" />
         </article> */}
-        </div>
+        </motion.div>
       </div>
     </Wrapper>
   );
