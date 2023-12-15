@@ -3,7 +3,11 @@ import styled from "styled-components";
 const Appriciation = () => {
   return (
     <section className="mx-auto max-w-7xl px-8 py-20" id="projects">
-      <SectionTitle text={"Appreciations - Hover on it."} />
+      <SectionTitle text={"Appreciations"} />
+      <div className="flex justify-center items-center mt-3">
+        <span>Touch | Hover on the letter.</span>
+      </div>
+
       <div>
         <div className="card flex justify-center items-center mt-8">
           <div className="relative bg-black w-[300px] md:w-[500px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center">
